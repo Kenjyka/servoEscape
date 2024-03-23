@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servo countdown</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+        </style>
+
+</head>
+<body>
+    <section class="card_room">
+        <h1 class="card_title">
+            <input type="text" class="card_title_changer">
+            <span>sala</span>
+            <button><span class="material-symbols-outlined">
+                edit
+                </span></button>
+        </h1>
+
+        <main>
+            <span class="timer">
+                <input type="number" name="minutos" class="minutos" value="60">
+                <span>:</span>
+                <input type="number" name="segundos" class="segundos" value="00">
+            </span>
+            <span>
+                <button class="play" data-timer-index="0">
+                    <span class="material-symbols-outlined">
+                    play_arrow
+                    </span>
+                </button>
+                    <button class="restart"><span class="material-symbols-outlined">
+                        restart_alt
+                    </span>
+                </button>
+            </span>
+        </main>
+        
+        <footer>
+            <span class="dica_holder">
+                <input type="number" name="dica" class="dica" value="3" min="0">
+                <label for="dica">Dicas</label>
+            </span>
+            <select name="nivel" id="level">
+                <option value="easy">Fácil</option>
+                <option value="medium">Médio</option>
+                <option value="hard">Difícil</option>
+                <option value="hardcore">Hardcore</option>
+            </select>
+        </footer>
+    </section>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
