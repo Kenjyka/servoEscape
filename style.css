@@ -40,9 +40,7 @@ body {
 
     position: relative;
 
-    & input[type=text] {
-        display: none;
-    }
+    
 
     & > .card_title {
         position: absolute;
@@ -69,6 +67,18 @@ body {
         & .material-symbols-outlined {
             color: #dddddd;
         }
+
+        & > input[type=text] {
+            display: none;
+            background-color: transparent;
+            border: none;
+            width: 90%;
+            color: inherit;
+            font-size: inherit;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
     }
 
 
